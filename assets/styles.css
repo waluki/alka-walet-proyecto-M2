@@ -1,0 +1,45 @@
+
+/*Dejar sin margenes y padding al inicio el body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Degradado premium Fintech (Azul profundo a Azul eléctrico) */
+    .bg-wallet-gradient {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 40%, #415a77 100%);
+      min-height: 100vh;
+    }
+    
+    /* Contenedor estilo tarjeta móvil para pantallas grandes */
+    .welcome-card {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    /* Ajuste para que en móviles ocupe todo el alto sin márgenes */
+    @media (max-width: 576px) {
+      .welcome-card {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+      }
+    }
+
+    /* Animación del ícono principal */
+    .pulse-icon {
+      font-size: 4.5rem;
+      background: linear-gradient(135deg, #38b000, #0077b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0px 4px 10px rgba(0, 119, 182, 0.3));
+    }
