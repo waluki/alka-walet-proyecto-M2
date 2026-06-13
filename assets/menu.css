@@ -1,0 +1,78 @@
+/* Fondo con la paleta Fintech corporativa en azul */
+    .bg-wallet-gradient {
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 40%, #415a77 100%);
+      min-height: 100vh;
+    }
+    
+    /* Contenedor estilo mockup de smartphone adaptativo para escritorio */
+    .app-card {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    /* Adaptación a pantalla completa en dispositivos móviles */
+    @media (max-width: 576px) {
+      .app-card {
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+      }
+    }
+
+    /* Barra de navegación traslúcida y estilizada */
+    .navbar-premium {
+      background: rgba(13, 27, 42, 0.8) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Tarjeta principal de Balance que emula la estética de la imagen_2409c0.png */
+    .main-balance-card {
+      background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 180, 216, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Tarjetas de resumen financiero (Ingresos y Egresos de la Lección 5) */
+    .summary-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      transition: transform 0.2s ease;
+    }
+
+    /* Botones circulares/estilizados de acción rápida parecidos a los del Figma */
+    .action-button-pill {
+      background: #ffffff;
+      color: #0d1b2a;
+      border: none;
+      border-radius: 14px;
+      padding: 12px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .action-button-pill:hover {
+      background: #00b4d8;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    
+    .avatar-circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #415a77;
+      border: 2px solid #00b4d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
